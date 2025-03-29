@@ -4,6 +4,7 @@ import path from 'path';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import eslint from 'vite-plugin-eslint';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-react-components/vite';
 import viteImagemin from 'vite-plugin-imagemin';
@@ -50,6 +51,7 @@ export default defineConfig(({ command }) => {
       },
     },
     plugins: [
+      command === 'serve' && eslint({ cache: false }),
       injectHTML({
         injectData: {
           title: 'My Electro Shop',
