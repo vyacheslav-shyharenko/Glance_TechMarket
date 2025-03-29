@@ -22,7 +22,7 @@
     <link rel="stylesheet" crossorigin href="/My-template/assets/styles-B7BQPdeW.css">
   </head>
   <body>
-    <!--HEADER -->
+    <!-- HEADER -->
     <header class="header">
   <div class="header__top">
     <a href="/index.html" class="header__logotype">
@@ -93,219 +93,76 @@
   </div>
 </header>
 
-    <div class="container">
-      <main class="main">
-        <div class="container_V1">
-          <!-- SALES -->
-          <section class="sales section">
-  <h1 class="visually-hidden">Sales</h1>
-  <ul class="sales__list">
-    <li class="sales__item">
-      <img
-        class="sales__image"
-        src="/My-template/assets/vertical-banners-sales-6-DZiO5qWk.jpg"
-        alt="sales"
-        width="300px"
-        height="300px"
-      />
-    </li>
-    <li class="sales__item">
-      <img
-        class="sales__image"
-        src="/My-template/assets/vertical-banners-sales-BCffF9iE.jpg"
-        alt="sales"
-        width="300px"
-        height="300px"
-      />
-    </li>
-    <li class="sales__item">
-      <img
-        class="sales__image"
-        src="/My-template/assets/vertical-banners-sales-7-CVPfhTm-.jpg"
-        alt="sales"
-        width="300px"
-        height="300px"
-      />
-    </li>
-    <li class="sales__item">
-      <img
-        class="sales__image"
-        src="/My-template/assets/vertical-banners-sales-2-COgQqWpB.jpg"
-        alt="sales"
-        width="300px"
-        height="300px"
-      />
-    </li>
-    <li class="sales__item">
-      <img
-        class="sales__image"
-        src="/My-template/assets/vertical-banners-sales-5-Dc1YWDzf.jpg"
-        alt="sales"
-        width="300px"
-        height="300px"
-      />
-    </li>
-    <li class="sales__item">
-      <img
-        class="sales__image"
-        src="/My-template/assets/vertical-banners-sales-3-BedfTcDJ.jpg"
-        alt="sales"
-        width="300px"
-        height="300px"
-      />
-    </li>
-    <li class="sales__item">
-      <img
-        class="sales__image"
-        src="/My-template/assets/vertical-banners-sales-4-Dt8Bxz6n.jpg"
-        alt="sales"
-        width="300px"
-        height="300px"
-      />
-    </li>
-  </ul>
-</section>
 
-          <!-- CATALOG -->
-          <section class="catalog section">
-  <h2 class="catalog__title visually-hidden">Catalog</h2>
-  <div class="catalog__button js-catalog-button">
-    <svg class="catalog-btn-icon" width="18" height="18">
-      <use href="/My-template/assets/sprite-CaURinuZ.svg#catalog"></use>
-    </svg>
-    <p class="catalog__button-text">Product catalog</p>
-  </div>
-  <ul class="catalog__list" id="js-catalog-list">
-    <li class="catalog__item">
-      <a class="catalog__link" data-name="phones" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#smartphone"></use>
-        </svg>
-        <span>Smartphones</span>
-        <svg class="catalog-arrow" width="20" height="20">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#arrow"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="catalog__item">
-      <a class="catalog__link" data-name="smartWatches" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#watch"></use>
-        </svg>
-        <span>Smartwatches</span>
-        <svg class="catalog-arrow" width="20" height="20">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#arrow"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="catalog__item">
-      <a class="catalog__link" data-name="tV" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#tv"></use>
-        </svg>
-        <span>TVs & Accessories</span>
-        <svg class="catalog-arrow" width="20" height="20">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#arrow"></use>
+    <main>
+      <!-- CRUMBS -->
+      <section class="breadcrumbs section">
+  <h1 class="breadcrumbs__title visually-hidden">Breadcrumbs</h1>
+  <nav class="breadcrumbs__nav" aria-label="breadcrumb">
+    <ul
+      class="breadcrumbs__list"
+      itemscope
+      itemtype="https://schema.org/BreadcrumbList"
+    >
+      <li
+        class="breadcrumbs__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <a href="./index.html" class="breadcrumbs__link" itemprop="item">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="breadcrumbs__separator">/</li>
+      <li
+        class="breadcrumbs__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <a class="breadcrumbs__link" itemprop="item">
+          <span class="breadcrumbs__current" itemprop="name">Catalog</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ul>
+    <div class="breadcrumbs__controls">
+      <a class="breadcrumbs__back" href="./index.html">
+        <svg class="breadcrumbs__icon" width="20" height="20">
+          <use href="./images/sprite.svg#back"></use>
         </svg>
       </a>
-    </li>
-    <li class="catalog__item">
-      <a class="catalog__link" data-name="audio" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#audio"></use>
-        </svg>
-        <span>Audio & Sound</span>
-        <svg class="catalog-arrow" width="20" height="20">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#arrow"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="catalog__item catalog-hidden">
-      <a class="catalog__link" data-name="" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#hair"></use>
-        </svg>
-        <span>Styling Tools</span>
-      </a>
-    </li>
-    <li class="catalog__item">
-      <a class="catalog__link" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#console"></use>
-        </svg>
-        <span>Gaming Consoles</span>
-        <svg class="catalog-arrow" width="20" height="20">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#arrow"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="catalog__item">
-      <a class="catalog__link" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#oven"></use>
-        </svg>
-        <span>Stoves & Cook</span>
-        <svg class="catalog-arrow" width="20" height="20">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#arrow"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="catalog__item catalog-hidden">
-      <a class="catalog__link" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#travel"></use>
-        </svg>
-        Tourism & Travel
-      </a>
-    </li>
-    <li class="catalog__item catalog-hidden">
-      <a class="catalog__link" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#home-living"></use>
-        </svg>
-        Home & Living
-      </a>
-    </li>
-    <li class="catalog__item catalog-hidden">
-      <a class="catalog__link" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#children"></use>
-        </svg>
-        <span>Children's Products</span>
-      </a>
-    </li>
-
-    <li class="catalog__item catalog-hidden">
-      <a class="catalog__link" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#perfumes"></use>
-        </svg>
-        <span>Perfumes</span>
-      </a>
-    </li>
-    <li class="catalog__item">
-      <a class="catalog__link" href="category.html">
-        <svg class="catalog__icon" width="40" height="40">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#sale"></use>
-        </svg>
-        <span>Sales & Promotions</span>
-        <svg class="catalog-arrow" width="20" height="20">
-          <use href="/My-template/assets/sprite-CaURinuZ.svg#arrow"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</section>
-
-        </div>
-        <!-- SHARES -->
-        <section class="shares section">
-  <h2 class="shares__title">Shares</h2>
-  <ul class="shares__list" id="js-shares-list"></ul>
-</section>
-
-      </main>
+      <h2 class="breadcrumbs__heading" id="js-breadcrumbs-title"></h2>
     </div>
+  </nav>
+</section>
+
+
+      <!-- CATEGORY PRODUCTS & FILTER -->
+      <section class="products">
+  <!-- Filters -->
+  <ul class="filters">
+    <li class="filters__item filters__item--arrow">
+      <svg class="filters__svg filters__svg--black" width="20" height="20">
+        <use href="/My-template/assets/sprite-CaURinuZ.svg#arrows"></use>
+      </svg>
+    </li>
+    <li class="filters__item filters__item--filter">
+      <svg class="filters__svg" width="20" height="20">
+        <use href="/My-template/assets/sprite-CaURinuZ.svg#filter"></use>
+      </svg>
+      Filters
+    </li>
+  </ul>
+
+  <!-- Products -->
+  <ul class="products-list" id="js-products-list"></ul>
+</section>
+
+    </main>
+
     <!-- MODAL CATALOG -->
     <div class="modal__overlay js-modal-catalog">
   <div class="modal">
