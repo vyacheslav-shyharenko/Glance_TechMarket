@@ -1,0 +1,57 @@
+.breadcrumbs__nav {
+  padding: 1rem;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 2.28rem;
+}
+
+.breadcrumbs__link {
+  display: flex;
+  color: rgb(161, 161, 161);
+}
+
+.breadcrumbs__link .breadcrumbs__current {
+  color: rgb(41, 40, 40);
+}
+
+.breadcrumbs__back {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.breadcrumbs {
+}
+.section {
+}
+.breadcrumbs__title {
+}
+.visually-hidden {
+}
+.breadcrumbs__nav {
+}
+.breadcrumbs__list {
+}
+.breadcrumbs__item {
+}
+.breadcrumbs__link {
+}
+.breadcrumbs__separator {
+}
+.breadcrumbs__current {
+}
+.breadcrumbs__controls {
+}
+.breadcrumbs__back {
+}
+.breadcrumbs__icon {
+}
+.breadcrumbs__heading {
+}

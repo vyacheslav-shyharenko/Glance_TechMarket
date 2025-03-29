@@ -4,7 +4,6 @@ import path from 'path';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
-import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-react-components/vite';
 import viteImagemin from 'vite-plugin-imagemin';
 
@@ -59,10 +58,6 @@ export default defineConfig(({ command }) => {
       FullReload(['./src/**/*.html']),
       SortCss({
         sort: 'mobile-first',
-      }),
-      AutoImport({
-        imports: ['react', 'react-router-dom'],
-        dts: 'src/auto-imports.d.ts',
       }),
       Components({
         dirs: ['src/components'],

@@ -1,0 +1,131 @@
+.catalog {
+  padding-bottom: 0;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog {
+  }
+}
+
+.catalog__button {
+  padding: 1.07rem;
+  background-color: rgb(0, 161, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.87rem;
+  border-radius: 0.57rem;
+  cursor: pointer;
+  color: white;
+}
+
+.catalog-btn-icon {
+  display: flex;
+  align-items: center;
+  stroke: white;
+  fill: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog__button {
+    display: none;
+  }
+}
+
+.catalog__list {
+  padding: 1.42rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 0.71rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog__list {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .catalog__list .catalog-hidden {
+    display: none;
+  }
+}
+
+.catalog__list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.catalog__item {
+  display: flex;
+  width: 6rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+  scroll-snap-align: start;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog__item {
+    width: calc((100% - 2rem) / 3);
+    box-shadow: none;
+    background-color: whitesmoke;
+  }
+}
+.catalog__link {
+  width: 100%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.71rem;
+  padding: 1.78rem 0.71rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #000;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .catalog__link {
+    background-color: whitesmoke;
+    flex-direction: row;
+    font-size: 1rem;
+    border-radius: 10rem;
+    transition: all 250ms ease-in-out;
+  }
+
+  .catalog__link span {
+    transition: all 250ms ease-in-out;
+  }
+  .catalog__link:hover span {
+    transform: translateX(20%);
+  }
+
+  .catalog__link:hover .catalog__icon {
+    stroke: rgba(79, 79, 150, 0.959);
+    fill: rgba(79, 79, 150, 0.959);
+  }
+}
+
+.catalog-arrow {
+  margin-left: auto;
+}
+@media only screen and (max-width: 768px) {
+  .catalog-arrow {
+    display: none;
+  }
+}
+.catalog__icon {
+  stroke: rgb(0, 161, 201);
+  fill: rgb(0, 161, 201);
+  pointer-events: none;
+  transition: all 250ms ease-in-out;
+}

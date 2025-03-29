@@ -1,0 +1,42 @@
+<section class="breadcrumbs section">
+  <h1 class="breadcrumbs__title visually-hidden">Breadcrumbs</h1>
+  <nav class="breadcrumbs__nav" aria-label="breadcrumb">
+    <ul
+      class="breadcrumbs__list"
+      itemscope
+      itemtype="https://schema.org/BreadcrumbList"
+    >
+      <li
+        class="breadcrumbs__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <a href="./index.html" class="breadcrumbs__link" itemprop="item">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="breadcrumbs__separator">/</li>
+      <li
+        class="breadcrumbs__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <a class="breadcrumbs__link" itemprop="item">
+          <span class="breadcrumbs__current" itemprop="name">Catalog</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ul>
+    <div class="breadcrumbs__controls">
+      <a class="breadcrumbs__back" href="./index.html">
+        <svg class="breadcrumbs__icon" width="20" height="20">
+          <use href="./images/sprite.svg#back"></use>
+        </svg>
+      </a>
+      <h2 class="breadcrumbs__heading" id="js-breadcrumbs-title"></h2>
+    </div>
+  </nav>
+</section>

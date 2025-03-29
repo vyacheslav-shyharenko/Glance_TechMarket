@@ -1,0 +1,157 @@
+@media only screen and (max-width: 768px) {
+  .shares {
+    padding-top: 0;
+  }
+}
+.shares__title {
+  font-size: 1.42rem;
+  font-weight: 500;
+  color: black;
+  background-color: #dbdbdb59;
+  padding: 1rem;
+}
+
+.shares__list {
+  display: flex;
+  flex-wrap: nowrap;
+  border-top: 1px solid rgb(0, 161, 201);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+.shares__list::-webkit-scrollbar {
+  display: none;
+}
+
+.shares__item {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.42rem;
+  width: calc((100%) / 2);
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.shares-item-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.shares__image {
+  object-fit: contain;
+  width: 100%;
+  min-height: 9.6rem;
+  max-height: 18.92rem;
+}
+
+.shares__color-list {
+  display: flex;
+  justify-content: center;
+  gap: 0.42rem;
+}
+
+.shares__color-item {
+  width: 1.07rem;
+  height: 1.07rem;
+  outline: 0.14rem solid #e4e4e4;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.shares__name {
+  word-wrap: break-word;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: center;
+  min-height: 3rem;
+  width: 100%;
+}
+
+.shares__action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .shares__action,
+  .shares__info {
+    padding: 0 50px;
+  }
+}
+
+.shares__price--discount {
+  white-space: nowrap;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.shares__price span {
+  font-size: 0.7rem;
+  position: absolute;
+  transform: translateY(-0.78rem);
+  padding: 0.1rem 0.3rem;
+  background-color: #f30606c0;
+  border-radius: 35%;
+  color: white;
+}
+
+.shares__price--original {
+  text-decoration: line-through;
+  font-size: 0.85rem;
+  color: rgb(163, 163, 163);
+  font-weight: 500;
+}
+
+.shares__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shares__stock {
+  align-self: center;
+}
+
+.shares__like-icon {
+  align-self: center;
+}
+.shares__button-box {
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  max-width: 48px;
+  height: 100%;
+  display: flex;
+}
+
+.shares__button-box svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.shares-basket-btn use {
+  stroke: #ffffff;
+  fill: white;
+  stroke-width: 1.5;
+}
+
+.shares__button {
+  width: 100%;
+  background-color: rgb(0, 161, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: transparent;
+  color: white;
+}

@@ -1,0 +1,30 @@
+@media only screen and (min-width: 768px) {
+  .sales {
+    padding-bottom: 0;
+  }
+}
+
+.sales__list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.sales__list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.sales__item {
+  width: calc(100% / 3.8);
+  flex-shrink: 0;
+  padding: 0.14rem;
+  scroll-snap-align: start;
+}
+
+.sales__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.35rem;
+}
